@@ -1,0 +1,112 @@
+/* ==========================================================================
+	 Typography 
+	 ========================================================================== */
+
+body {
+    font-family: $font_family-monument;
+    font-size: 20px;
+    color: $color_black;;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*========================================================================== */
+
+@mixin typo_monument_64-76 {
+    font-family: $font_family-monument;
+    font-size: 64px;
+    line-height: (76 / 64);
+}
+@mixin typo_monument_24-28 {
+    font-family: $font_family-monument;
+    font-size: 24px;
+    line-height: (28 / 24);
+}
+@mixin typo_monument_20-24 {
+    font-family: $font_family-monument;
+    font-size: 20px;
+    line-height: (24 / 20);
+}
+@mixin typo_monument_14-24 {
+    font-family: $font_family-monument;
+    font-size: 14px;
+    line-height: (24 / 14);
+}
+
+
+/*========================================================================== */
+
+@mixin typo_tt_20-26 {
+    font-family: $font_family-tt-firs;
+    font-size: 20px;
+    line-height: (26 / 20);
+}
+@mixin typo_tt_20-24 {
+    font-family: $font_family-tt-firs;
+    font-size: 20px;
+    line-height: (24 / 20);
+}
+@mixin typo_tt_16-24 {
+    font-family: $font_family-tt-firs;
+    font-size: 16px;
+    line-height: (24 / 16);
+}
+@mixin typo_tt_12-16 {
+    font-family: $font_family-tt-firs;
+    font-size: 12px;
+    line-height: (16 / 12);
+}
+
+/*========================================================================== */
+
+.t-title {
+    @include typo_monument_64-76;
+    color: $color_black;    
+
+    &.-f24 {
+        @include typo_monument_24-28;
+    }
+
+    &.-f20 {
+        @include typo_monument_20-24;
+    }
+
+    &.-f14 {
+        @include typo_monument_14-24;
+    }
+
+    @include respond-above(md) {
+        &.-f16md {
+        }
+
+    }
+
+    @include respond-above(sm) {
+        &.-f56sm {
+        }
+    }
+
+}
+
+/*========================================================================== */
+
+.t-text {
+    @include typo_tt_20-26;
+
+    &.-f16 {
+        @include typo_tt_16-24;
+    }
+    &.-f12 {
+        @include typo_tt_12-16;
+    }
+
+    @include respond-below(md) {
+        &.-f16_20md {
+        }
+    }
+    
+    @include respond-below(sm) {        
+        &.-f22sm {
+        }
+    }
+}

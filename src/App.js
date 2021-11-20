@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './assets/styles/app.scss'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+
+
+import { auth } from "./modules/firebase";
+import Login from './views/Login';
+import Reset from './views/Reset';
+import Register from './views/Register';
+import Dashboard from './views/Dashboard';
+import { PrivateRoute } from './components/PrivateRoute';
+import BottomNAvi from './components/BottomNavi';
 
 function App() {
+  const [user] = useAuthState(auth);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <BottomNAvi />
+        <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/reset' element={<Reset />} />
+        <Route path='/dashboard' element={
+          <PrivateRoute authorized={user}>
+            <Dashboard />
+          </PrivateRoute>
+        } />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

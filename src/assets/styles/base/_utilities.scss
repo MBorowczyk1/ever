@@ -1,0 +1,104 @@
+/* ==========================================================================
+	 Utilities
+	 ========================================================================== */
+
+.-uppercase {
+    text-transform: uppercase;
+}
+.-italic {
+    font-style: italic;
+}
+.-withUnderline {
+    text-decoration: underline;
+}
+
+/*========================================================================== */
+
+.-wNormal {
+    font-weight: 400;
+}
+.-wSBold {
+    font-weight: 600;
+}
+.-wBold {
+    font-weight: 700;
+}
+
+@include respond-below(sm) {
+    .-wNormalSm {
+        font-weight: 400;
+    }
+}
+
+/*========================================================================== */
+
+.-tCenter {
+    text-align: center;
+}
+.-tLeft {
+    text-align: left;
+}
+.-tRight {
+    text-align: right;
+}
+
+@include respond-below(md) {
+    .-tCenterMd {
+        text-align: center;
+    }
+}
+
+@include respond-below(sm) {
+    .-tCenterSm {
+        text-align: center;
+    }
+    .-tLeftSm {
+        text-align: left;
+    }
+}
+
+/*========================================================================== */
+
+.-cWhite {
+    color: $color_white;
+}
+
+.-cBlack {
+    color: $color_black;
+}
+.-cBlack2 {
+    color: $color_black2;
+}
+.-cGrey {
+    color: $color_grey;
+}
+.-cPurple {
+    color: $color_purple;
+}
+
+/*========================================================================== */
+
+.-fullWidth {
+    width: 100%;
+}
+
+.-smFullWidth {
+    @include respond-below(sm) {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+.-mdFullWidth {
+    @include respond-below(md) {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+.-smFullImgWidth {
+    @include respond-below(xs) {
+        width: 100vw !important;
+        max-width: none;
+        margin-left: calc(50% - 50vw);
+    }
+}

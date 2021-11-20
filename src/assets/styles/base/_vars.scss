@@ -1,0 +1,36 @@
+/* ==========================================================================
+	 Vars
+	 ========================================================================== */
+
+/* Colors */
+$color_white: #fff;
+$color_black: #212121;
+$color_black2: #080A1D;
+$color_grey: #9DA2AC;
+$color_purple: #E117D9;
+
+
+
+/* Fonts */
+$font_family-tt-firs: 'TT Firs Neue', sans-serif;
+$font_family-monument: 'Monument Extended';
+
+/* Breakpoints */
+$breakpoints: (
+    xxxxs: 320px,
+    xxxs: 360px,
+    xxs: 375px,
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1230px,
+    xl: 1366px,
+    xxl: 1680px,
+);
+
+/* Distances */
+$menu_height: 141px;
+$menu_height_mobile: 68px;
+
+/* Other */
+$image_path: '../../../images';

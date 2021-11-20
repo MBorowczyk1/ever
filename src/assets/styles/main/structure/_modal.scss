@@ -1,0 +1,18 @@
+.c-modal {
+    position: absolute;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: $color_white;
+    background-repeat: repeat-x;
+    background-position: top;
+    &_walletContent {
+        width: 500px;
+        @include respond-below(sm) {
+            width: auto;
+        }
+    }
+}

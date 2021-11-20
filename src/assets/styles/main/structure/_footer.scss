@@ -1,0 +1,52 @@
+.c-footer {
+    &_wrapper {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: $color_black2;
+    }
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $color_white;
+    }
+    &_logo {
+        width: 110px;
+        margin-bottom: -20px;
+    }
+    &_powered {
+        width: 153px;
+    }
+    &_navLink {
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba($color_white, .1);
+        }
+    }
+    &_footer {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &Text {
+            margin-top: 31px;
+            display: flex;
+            font-family: TT Firs Neue;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 16px;
+            img {
+                margin-right: 6px;
+                margin-left: 6px;
+            }
+        }
+    }
+}

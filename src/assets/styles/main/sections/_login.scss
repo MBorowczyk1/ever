@@ -1,0 +1,14 @@
+.c-loginSec {
+    &_wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+        background: url('../../../images/bg-splash.png');
+        background-position: center;
+        background-size: cover;
+    }
+    &_title {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color_white;
+    }
+}

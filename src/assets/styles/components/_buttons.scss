@@ -1,0 +1,78 @@
+/* ==========================================================================
+	Buttons
+	========================================================================== */
+
+    a,
+    button {
+        font-family: $font_family-monument;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+    
+        &:not(.-disabled):not(.-disabled2):hover {
+            transform: translateY(1px);
+        }
+    }
+    
+    button {
+        background-color: transparent;
+        border: 0;
+    
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+    // /*========================================================================== */
+
+    .c-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 287px;
+        height: 60px;
+        font-family: Monument Extended;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        border: 2px solid;
+        border-radius: 4px;
+        &.-primary {
+            color: $color_black;
+            background-color: white;
+            border-color: $color_black;
+            &.-disabled {
+                
+            }
+        }
+        &.-secondary {
+            color: $color_white;
+            background-color: transparent;
+            border-color: $color_white;
+            &.-disabled {
+                
+            }
+            &.-bottomBorder {
+                min-width: 191px;
+                max-width: 191px;
+                height: 32px;
+                margin-right: auto;
+                margin-left: auto;
+                border: 0;
+                border-bottom: 2px solid;
+                border-radius: 0;
+            }
+        }
+        &.-tertiary {
+            color: $color_purple;
+            background-color: transparent;
+            border-color: $color_purple;
+            &.-disabled {
+
+            }
+        }
+        
+    }

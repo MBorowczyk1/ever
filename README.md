@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To run app locally
+
+- `yarn install`
+- in case of any trouble with sass try to run (after `yarn install`)
+		- switch to node version 14
+		- `node node_modules/node-sass/scripts/install.js`
+		- `npm rebuild node-sass`
+- `yarn start` for development
+
+## Tech Stack
+
+Tools/Technologies used:
+
+### `React`
+
+### `React-router-dom v6`
+
+### `SCSS`
+
+### `Firebase`
+
+### `axios`
+
+
 ## Available Scripts
 
 In the project directory, you can run:

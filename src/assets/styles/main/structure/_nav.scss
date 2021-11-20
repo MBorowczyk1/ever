@@ -1,0 +1,39 @@
+.c-bottomNavi {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background: rgba($color_white, 0.8);
+    backdrop-filter: blur(12px);
+    span {
+        font-family: Monument Extended;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 12px;
+        margin-top: 8px;
+    }
+    &_tab {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.c-topNavi {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+    &.-single {
+        justify-content: flex-end;
+        padding: 0 0 32px;
+    }
+    &.-duo {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
